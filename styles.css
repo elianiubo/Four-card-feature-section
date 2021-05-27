@@ -1,214 +1,309 @@
+
 *{
     margin: 0px;
     padding: 0px;
 }
 body{
-    /*max-width:1440px;*/
-    background:#e6e1e1;
+    background: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    height: 0px auto;
 }
-    
-@font-face {
-    font-family: 'BigShoulders';
-   src: url('BigShouldersDisplay-Medium.ttf');
-   font-weight: 700;
-}
-@font-face{
-    font-family:'LexendDeca';
-    src: url('LexendDeca-Regular.ttf');
-    font-weight: normal;
-}
-.clearfix{
+/*.clearfix{
     clear: both;
-}
-#wrap-box{
-   /* max-width: 100%;
-    display: block;
-    position: absolute;
-    margin-left: 405px;
-    margin-top: 168px;*/
+    float: none;
+}*/
+
+/*Heading style*/
+#wrap{
+    
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-    top: 80px;
-    
-    
-}
-#sedans-box{
-    width: 300px;
-    height: 500px;
-    background: hsl(31, 77%, 52%);
-    float: left;
-    color:  hsl(0, 0%, 95%);
-    border-radius: 15px 0px 0px 15px;
-    /*border-radius: 50px / 15px;*/
-}
-#suvs-box{
-    width: 300px;
-    height: 500px;
-    background: hsl(184, 100%, 22%);
-    float: left;
-    color:  hsl(0, 0%, 95%);
-    
-}
-#luxury-box{
-    width: 300px;
-    height: 500px;
-    background: hsl(179, 100%, 13%);
-    float: left;
-    color:  hsl(0, 0%, 95%);
-    border-radius: 0px 15px 15px 0px;
 }
 
-
-div img{
-    margin-top: 20px;
-    margin-left:35px;
-}
-div h4{
-    margin: 36px;
-    font-size: 50px;
-    font-family: 'BigShoulders';
-    text-transform: uppercase;
-    font-size: 40px;
-}
-div p{
-    margin:20px;
-    margin-bottom: -10px;
-    padding-left: 15px;
-    line-height: 1.7;
-    width: 70%;
-    font-size: 15px;
-    font-family: 'LexendDeca';
-    /*text-align: justify;*/
-    color: hsla(0, 0%, 100%, 0.637);
-    /*word-spacing: normal;*/
-    
-}
-div a{
+#head{
     display: block;
-   margin-top: 103px;
-   background: white;
-   padding: 13px;
-   width: 102px;
-   text-align: center;
-   font-size: 13px;
-   font-family: 'LexendDeca';
-   border-radius: 28px;
-   margin-left: 39px;
-   border: 1px white solid;
-   text-decoration: none;
-}
+    width: 1250px;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 40px;
+} 
 
-#sedans-box > a{
-color: hsl(31, 77%, 52%);
-}
-#suvs-box > a{
-color:hsl(184, 100%, 22%);
-}
-#luxury-box > a{
-    color:  hsl(179, 100%, 13%);
-}
+.first-title{
 
-#sedans-box > a:hover{
-    border: 2px white solid;
-    background: hsl(31, 77%, 52%);
-    color:hsla(0, 0%, 100%, 0.637);
-}
-#suvs-box > a:hover{
-    border: 2px white solid;
-    background:hsl(184, 100%, 22%);
-    color:hsla(0, 0%, 100%, 0.637);
-}
-#luxury-box > a:hover{
-    border: 2px white solid;
-    background: hsl(179, 100%, 13%);
-   color: hsla(0, 0%, 100%, 0.637);
+font-family: 'Poppins';
+font-size:  35px;
+font-weight:300;
+margin-top: 4%;
+color: hsl(234, 12%, 34%);
 
 }
+.second-title{
+    font-size:  35px;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+.subtitle{
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    margin-top: 1%;
+    line-height: 26px;
+}
 
-@media(max-width:936px) {
+/*Containers style*/
+
+#containers{
+    background: white;
+    width: 1250px;
+    margin: 0% auto;
+    display: flex;
+    justify-content: center;
+    background:  hsl(0, 0%, 98%);
+    
+    
+    
+}
+.supervisor{
+    background-color: white;
+    width: 280px;
+    padding: 30px;
+    margin: 15px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 5%), 0 6px 6px rgb(0 0 0 / 10%);
+    position: relative;
+    overflow: hidden;
+    transform: translateY(50%);
+    border-top: 4px solid hsl(180, 62%, 55%);
+    
+    
+}
+.team-builder{
+    background-color: white;
+    width: 280px;
+    padding: 30px;
+    height: 200px;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 5%), 0 6px 6px rgb(0 0 0 / 10%);
+    position: relative;
+    overflow: hidden;
+    border-top: solid 4px hsl(0, 78%, 62%);
+     }
+.karma{
+    background-color: white;
+    padding: 30px;
+    height: 200px;
+    width: 280px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 5%), 0 6px 6px rgb(0 0 0 / 10%);
+    position: absolute;
+    overflow: hidden;
+    margin: 310px;
+    border-top:  solid 4px  hsl(34, 97%, 64%);
+}
+    
+    
+.calculator{
+    background-color: white;
+    width: 280px;
+    padding: 30px;
+    height: 200px;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 5%), 0 6px 6px rgb(0 0 0 / 10%);
+    position: relative;
+    overflow: hidden;
+    transform: translateY(50%);
+    border-top: solid 4px hsl(212, 86%, 64%);
+}
+
+.h2-style{
+         font-size: 21px;
+         color: hsl(234, 12%, 34%);
+}
+     
+.p-style{
+         font-size: 13px;
+         color: hsl(229, 6%, 66%);
+         margin-top: 10px;
+         line-height: 1.8;
+}
+.img{
+         float: right;
+         width: 71px;
+         margin-top: 49px;
+ }
+
+ /*Responsive*/
+@media(max-width:1142px){
+   
+    #containers{
+          width: 1000px;
+          position: relative;
+          display: block;
+          margin: 0px auto;
+      
+      }
+      .supervisor{
+          width: 40%;
+          transform: none;
+          position: relative;
+          overflow: visible;
+      }
+      .team-builder{
+          width: 40%;
+          float: right;
+          overflow: visible;
+      }
+      .supervisor, .team-builder{
+          display: inline-block;
+      }
+      .karma, .calculator{
+          display: inline-block;
+      }
+      .karma{
+          width: 40%;
+          
+          position: relative;
+          margin:  0px auto;
+          float: left;
+          overflow: visible;
+         
+      }
+      .calculator{
+          width: 40%;
+          transform:none;
+          position:relative;
+          float: right;
+          overflow: visible;
+         
+          
+      }
+      #containers, .supervisor,  .team-builder, .karma, .calculator{
+          margin: 35px -99px 0px 50px;
+      }
+  }
+  @media(max-width:968px){
+      #head{
+          width: 900px;
+  
+      }
+      .first-title{
+          font-size:  40px;
+      }
+      .second-title{
+          font-size:  40px;
+  
+      }
+      .subtitle{
+          font-size: 20px;
+          line-height: 40px;
+      }
+      #containers{
+          width: 900px
         
-    body{
-        
-        height: 1400px;
-        display: grid;
-        place-content: center;
-        padding: 5rem 2rem;
-    }
-    #wrap-box{
-        display: grid;
-        place-content: center;
-        padding: 5rem 2rem;
-        margin-top: -142px;
-        margin-left: -9%;
-        position: relative;
-        margin-bottom: -50px;
-        
+      
+      }
+      .supervisor{
+          width: 30%;
+          
+      }
+      .team-builder{
+          width: 30%;
+          
+      }
+    
+      .karma{
+          width: 30%;
+          
+         
+         
+      }
+      .calculator{
+          width: 30%;
+          
+      }
+      #containers, .supervisor,  .team-builder, .karma, .calculator{
+          margin: 37px 70px 0px 50px
+      }
+      .h2-style{
+          font-size: 23px;
+      }
+      .p-style{
+          font-size: 15px;
+      }
+      .img{
+          width: 54px;
+          margin-top: 42px;
+           }
+  
+  }
+  
+  @media(max-width:522px){
+      #head{
+          width: 936px;
+          text-align: center;
+  
+      }
+      .first-title{
+          font-size:  58px;
+      }
+      .second-title{
+          font-size:  58px;
+  
+      }
+      .subtitle{
+          font-size: 25px;
+          line-height: 40px;
+          margin-top:28px;
+      }
+      #containers{
+          display: flex;
+          flex-direction:column;
+          align-items: center;
+          margin-top: 28px;
+      }
+      .supervisor{
+          width: 80%;
+          height:213px;
+          
+      }
+      .team-builder{
+          width: 80%;
+          height:213px;
+          
+      }
+    
+      .karma{
+          width: 80%;
+          height:213px;
+          
+         
+         
+      }
+      .calculator{
+          width: 80%;
+          height:213px;
+          
+      }
+      .h2-style{
+          font-size: 40px;
+      }
+      .p-style{
+          font-size: 26px;
+      }
+      .img{
+          width: 83px;
+          margin-top: 10px;
+           }
+   .team-builder .img{
+    margin-top: -26px;
+  
+   }
+   .calculator .img{
+       margin-top: -23px;
+   }
+  
+  }
+    
 
-    }
-    #sedans-box{
-        width: 300px;
-        height: 500px;
-        background: hsl(31, 77%, 52%);
-        color:  hsl(0, 0%, 95%);
-        border-radius: 10px 10px 0px 0px;
-    }
-    #suvs-box{
-        width: 300px;
-        height: 500px;
-        background: hsl(184, 100%, 22%);
-        color:  hsl(0, 0%, 95%);
-        border-radius: none;
-    }
-    #luxury-box{
-        width: 300px;
-        height: 500px;
-        background: hsl(179, 100%, 13%);
-        color:  hsl(0, 0%, 95%);
-        border-radius: 0px 0px 10px 10px;
-    }
-}
-
-@media(max-width:400px){
-    body{
-        width: 375px;
-        height: 1400px;
-        display: grid;
-        place-content: center;
-        padding: 5rem 2rem;
-    }
-    #wrap-box{
-        display: grid;
-        place-content: center;
-        padding: 5rem 2rem;
-        margin-top: -142px;
-        margin-left: -2%;
-        position: relative;
-        margin-bottom: -50px;
-        
-
-    }
-    #sedans-box{
-        width: 300px;
-        height: 500px;
-        background: hsl(31, 77%, 52%);
-        color:  hsl(0, 0%, 95%);
-        border-radius: 10px 10px 0px 0px;
-    }
-    #suvs-box{
-     width: 300px;
-     height: 500px;
-    background: hsl(184, 100%, 22%);
-    color:  hsl(0, 0%, 95%);
-    border-radius: none;
-    }
-    #luxury-box{
-    width: 300px;
-    height: 500px;
-    background: hsl(179, 100%, 13%);
-    color:  hsl(0, 0%, 95%);
-    border-radius: 0px 0px 10px 10px;
-    }
-}
+     
